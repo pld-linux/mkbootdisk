@@ -2,12 +2,13 @@ Summary:	Creates a standalone boot floppy for the running system
 Summary(pl):	Tworzy bootkietkê dla dzia³aj±cego systemu
 Name:		mkbootdisk
 Version:	2.0
-Release:	0
+Release:	1
 License:	GPL
 Group:		Base/Utilities
+Group(de):	Gründsätzlich/Werkzeuge
 Group(pl):	Podstawowe/Narzêdzia
-Source:		%{name}-%{version}.tar.gz
-ExclusiveArch:	i386 sparc sparc64
+Source0:	%{name}-%{version}.tar.gz
+ExclusiveArch:	%{ix86} sparc sparc64
 Requires:	mkinitrd
 %ifarch sparc sparc64
 Requires:	silo genromfs
@@ -35,10 +36,13 @@ modu³y SCSI.
 rm -rf $RPM_BUILD_ROOT
 %{__make} BUILDROOT=$RPM_BUILD_ROOT install
 
+install -d $RPM_BUILD_ROOT%{_mandir}/man8
+install mkbootdisk.8 $RPM_BUILD_ROOT%{_mandir}/man8
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) /sbin/mkbootdisk
-%attr(644,root,root) %{_mandir}/man8/mkbootdisk.8
+%attr(644,root,root) %{_mandir}/man8/mkbootdisk.8*
