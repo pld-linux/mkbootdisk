@@ -26,7 +26,7 @@ the system.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make BUILDROOT=$RPM_BUILD_ROOT install
+%{__make} BUILDROOT=$RPM_BUILD_ROOT install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
