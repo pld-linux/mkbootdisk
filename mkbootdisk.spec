@@ -5,7 +5,7 @@ Version:	2.0.2
 Release:	1
 License:	GPL
 Group:		Base/Utilities
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	http://mops.uci.agh.edu.pl/~gotar/%{name}-%{version}.tar.bz2
 Requires:	/bin/awk
 Requires:	e2fsprogs
 Requires:	fileutils
