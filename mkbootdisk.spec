@@ -10,6 +10,7 @@ Release:	1
 License:	GPL
 Group:		Base/Utilities
 Source0:	http://mops.uci.agh.edu.pl/~gotar/%{name}-%{version}.tar.bz2
+# Source0-md5:	25128bfc5fa2d68031f3abebb0a2a424
 Requires:	/bin/awk
 Requires:	e2fsprogs
 Requires:	fileutils
