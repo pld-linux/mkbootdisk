@@ -1,5 +1,5 @@
 Summary:	Creates a standalone boot floppy for the running system
-Summary(pl):	Tworzy bootkietkê dla dzia³aj±cego systemu
+Summary(pl):	Tworzy dyskietkê startow± dla dzia³aj±cego systemu
 Name:		mkbootdisk
 Version:	2.0
 Release:	1
@@ -17,18 +17,19 @@ ExclusiveArch:	%{ix86} sparc sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The mkbootdisk program creates a standalone boot floppy disk for
-booting the running system. The created boot disk will look for the
-root filesystem on the device mentioned in %{_sysconfdir}/fstab and
-ncludes an initial ramdisk image which will load any necessary SCSI
-modules for the system.
+The mkbootdisk program creates a standalone boot floppy disk for booting the
+running system. The created boot disk will look for the root filesystem on
+the device mentioned in /etc/fstab and ncludes an initial ramdisk image
+which will load any necessary modules for mount root file system and
+continue from start system.
 
 %description -l pl
-Program mkbootdisk tworzy samodzieln± bootkietkê do startowania
-dzia³aj±cego systemu. Utworzony dysk bêdzie szuka³ g³ównego systemu
-plików na urz±dzeniu wymienionym w %{_sysconfdir}/fstab i zawiera³
-obraz startowego ramdysku ³aduj±cego wszelkie niezbêdnie dla systemu
-modu³y SCSI.
+Program mkbootdisk tworzy samodzieln± dyskietkê startow± do startow± do
+dzia³aj±cego systemu. Utworzony obraz dyskietki przy starcie bêdzie szuka³
+g³ównego systemu plików na urz±dzeniu wymienionym w /etc/fstab i zawiera³
+bedzie obraz startowego ramdysku ³aduj±cego wszelkie niezbêdnie dla systemu
+modu³y potrzebne do podmontowania g³ównego systemu plikowrgo i kontynuacji z
+w niego dalej starrtu systemu.
 
 %prep
 %setup -q
