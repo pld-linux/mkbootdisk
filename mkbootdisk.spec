@@ -12,7 +12,7 @@ Requires: mkinitrd
 %ifarch sparc sparc64
 Requires: silo genromfs
 %endif
-BuildRoot: /var/tmp/%{name}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The mkbootdisk program creates a standalone boot floppy disk for booting
