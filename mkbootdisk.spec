@@ -5,8 +5,6 @@ Version:	2.0
 Release:	1
 License:	GPL
 Group:		Base/Utilities
-Group(de):	Gründsätzlich/Werkzeuge
-Group(pl):	Podstawowe/Narzêdzia
 Source0:	%{name}-%{version}.tar.gz
 ExclusiveArch:	%{ix86} sparc sparc64
 Requires:	mkinitrd
