@@ -46,7 +46,7 @@ módulos SCSI necesarios al sistema.
 Program mkbootdisk tworzy samodzieln± dyskietkê startow± dla
 dzia³aj±cego systemu. Utworzony obraz dyskietki przy starcie bêdzie
 szuka³ g³ównego systemu plików na urz±dzeniu wymienionym w /etc/fstab
-i zawiera³ bedzie obraz startowego ramdysku ³aduj±cego wszelkie
+i zawiera³ bêdzie obraz startowego ramdysku ³aduj±cego wszelkie
 niezbêdnie dla systemu modu³y potrzebne do podmontowania g³ównego
 systemu plikowego i kontynuacji z w niego dalej startu systemu.
 Program bazuje na lilo, jako ¿e rêcznie zrobienie dyskietki startowej
