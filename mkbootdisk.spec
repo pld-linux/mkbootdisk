@@ -5,7 +5,7 @@ Summary(pt_BR):	Cria um disco de inicializaГЦo
 Summary(ru):	Создает самодостаточную загрузочную дискету для текущей системы
 Summary(uk):	Створю╓ самодостатню загрузочну дискету для поточно╖ системи
 Name:		mkbootdisk
-Version:	2.0.2
+Version:	2.0.3
 Release:	1
 License:	GPL
 Group:		Base/Utilities
