@@ -31,11 +31,11 @@ startowego ramdysku ³aduj±cego wszelkie niezbêdnie dla systemu modu³y SCSI.
 %setup -q
 
 %install
-%{__rm} -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 %{__make} BUILDROOT=$RPM_BUILD_ROOT install
 
 %clean
-%{__rm} -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
