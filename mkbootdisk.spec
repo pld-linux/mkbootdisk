@@ -6,13 +6,14 @@ Release:	1
 License:	GPL
 Group:		Base/Utilities
 Source0:	%{name}-%{version}.tar.gz
-ExclusiveArch:	%{ix86} sparc sparc64
 Patch0:		%{name}.ix86.patch
 Patch1:		%{name}.sparc.patch
 Requires:	geninitrd
 %ifarch sparc sparc64
-Requires:	silo genromfs
+Requires:	silo
 %endif
+Requires:	geninitrd
+ExclusiveArch:	%{ix86} sparc sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,12 +41,12 @@ modu³y SCSI.
 %patch1 -p0
 %endif
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} BUILDROOT=$RPM_BUILD_ROOT install
-
 install -d $RPM_BUILD_ROOT%{_mandir}/man8
+
+%{__make} install BUILDROOT=$RPM_BUILD_ROOT
+
 install mkbootdisk.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
 %clean
@@ -54,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) /sbin/mkbootdisk
-%attr(644,root,root) %{_mandir}/man8/mkbootdisk.8*
+%{_mandir}/man8/mkbootdisk.8*
