@@ -1,7 +1,7 @@
 Summary:	Creates a standalone boot floppy for the running system
 Summary(pl):	Tworzy dyskietkê startow± dla dzia³aj±cego systemu
 Name:		mkbootdisk
-Version:	2.0.1
+Version:	2.0.2
 Release:	1
 License:	GPL
 Group:		Base/Utilities
