@@ -7,7 +7,9 @@ License:	GPL
 Group:		Base/Utilities
 Source0:	%{name}-%{version}.tar.gz
 ExclusiveArch:	%{ix86} sparc sparc64
-Requires:	mkinitrd
+Patch0:		%{name}.ix86.patch
+Patch1:		%{name}.sparc.patch
+Requires:	geninitrd
 %ifarch sparc sparc64
 Requires:	silo genromfs
 %endif
@@ -29,6 +31,15 @@ modu³y SCSI.
 
 %prep
 %setup -q
+
+%ifarch %{ix86}
+%patch0 -p0
+%endif
+
+%ifarch sparc sparc64
+%patch1 -p0
+%endif
+
 
 %install
 rm -rf $RPM_BUILD_ROOT
