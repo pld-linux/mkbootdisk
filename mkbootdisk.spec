@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The mkbootdisk program creates a standalone boot floppy disk for
 booting the running system. The created boot disk will look for the
-root filesystem on the device mentioned in %{_sysconfdir}/fstab and 
+root filesystem on the device mentioned in %{_sysconfdir}/fstab and
 ncludes an initial ramdisk image which will load any necessary SCSI
 modules for the system.
 
