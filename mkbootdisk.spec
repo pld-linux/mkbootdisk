@@ -12,7 +12,6 @@ Requires:	geninitrd
 %ifarch sparc sparc64
 Requires:	silo
 %endif
-Requires:	geninitrd
 ExclusiveArch:	%{ix86} sparc sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
