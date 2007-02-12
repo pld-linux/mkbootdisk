@@ -1,9 +1,9 @@
 Summary:	Creates a standalone boot floppy for the running system
-Summary(es):	Crea un disquete de arranque
-Summary(pl):	Tworzy dyskietkЙ startow╠ dla dziaЁaj╠cego systemu
-Summary(pt_BR):	Cria um disco de inicializaГЦo
-Summary(ru):	Создает самодостаточную загрузочную дискету для текущей системы
-Summary(uk):	Створю╓ самодостатню загрузочну дискету для поточно╖ системи
+Summary(es.UTF-8):   Crea un disquete de arranque
+Summary(pl.UTF-8):   Tworzy dyskietkд≥ startowд┘ dla dziaе┌ajд┘cego systemu
+Summary(pt_BR.UTF-8):   Cria um disco de inicializaц╖цёo
+Summary(ru.UTF-8):   п║п╬п╥п╢п╟п╣я┌ я│п╟п╪п╬п╢п╬я│я┌п╟я┌п╬я┤п╫я┐я▌ п╥п╟пЁя─я┐п╥п╬я┤п╫я┐я▌ п╢п╦я│п╨п╣я┌я┐ п╢п╩я▐ я┌п╣п╨я┐я┴п╣п╧ я│п╦я│я┌п╣п╪я▀
+Summary(uk.UTF-8):   п║я┌п╡п╬я─я▌я■ я│п╟п╪п╬п╢п╬я│я┌п╟я┌п╫я▌ п╥п╟пЁя─я┐п╥п╬я┤п╫я┐ п╢п╦я│п╨п╣я┌я┐ п╢п╩я▐ п©п╬я┌п╬я┤п╫п╬я≈ я│п╦я│я┌п╣п╪п╦
 Name:		mkbootdisk
 Version:	2.0.3
 Release:	1
@@ -36,42 +36,42 @@ root file system and continue from start system. This program uses
 lilo, as manualy making boot floppy with syslinux or grub doesn't
 require any magic.
 
-%description -l es
+%description -l es.UTF-8
 Este paquete crea un disco de arranque autocontenido. Asume que el
-disco de arranque debe usar la particiСn raМz configurada en el
+disco de arranque debe usar la particiцЁn raц╜z configurada en el
 archivo /etc/fstab. El disco de arranque obtenido incluye todos los
-mСdulos SCSI necesarios al sistema.
+mцЁdulos SCSI necesarios al sistema.
 
-%description -l pl
-Program mkbootdisk tworzy samodzieln╠ dyskietkЙ startow╠ dla
-dziaЁaj╠cego systemu. Utworzony obraz dyskietki przy starcie bЙdzie
-szukaЁ gЁСwnego systemu plikСw na urz╠dzeniu wymienionym w /etc/fstab
-i zawieraЁ bЙdzie obraz startowego ramdysku Ёaduj╠cego wszelkie
-niezbЙdnie dla systemu moduЁy potrzebne do podmontowania gЁСwnego
+%description -l pl.UTF-8
+Program mkbootdisk tworzy samodzielnд┘ dyskietkд≥ startowд┘ dla
+dziaе┌ajд┘cego systemu. Utworzony obraz dyskietki przy starcie bд≥dzie
+szukaе┌ gе┌цЁwnego systemu plikцЁw na urzд┘dzeniu wymienionym w /etc/fstab
+i zawieraе┌ bд≥dzie obraz startowego ramdysku е┌adujд┘cego wszelkie
+niezbд≥dnie dla systemu moduе┌y potrzebne do podmontowania gе┌цЁwnego
 systemu plikowego i kontynuacji z w niego dalej startu systemu.
-Program bazuje na lilo, jako ©e rЙcznie zrobienie dyskietki startowej
-do u©ycia z syslinux b╠d╪ grubem nie wymaga ©adnych trickСw.
+Program bazuje na lilo, jako е╪e rд≥cznie zrobienie dyskietki startowej
+do uе╪ycia z syslinux bд┘dе╨ grubem nie wymaga е╪adnych trickцЁw.
 
-%description -l pt_BR
-Este pacote cria um disco de inicializaГЦo auto-contido. Assume que o
-disco de inicializaГЦo deve usar a partiГЦo raiz configurada no
-arquivo /etc/fstab. O disco de inicializaГЦo resultando inclui todos
-os mСdulos SCSI necessАrios ao sistema.
+%description -l pt_BR.UTF-8
+Este pacote cria um disco de inicializaц╖цёo auto-contido. Assume que o
+disco de inicializaц╖цёo deve usar a partiц╖цёo raiz configurada no
+arquivo /etc/fstab. O disco de inicializaц╖цёo resultando inclui todos
+os mцЁdulos SCSI necessц║rios ao sistema.
 
-%description -l ru
-Программа mkbootdisk создает самодостаточную загрузочную дискету для
-загрузки текущей системы. Созданная дискетка будет искать корневую
-файловую систему на устройстве, указанном в /etc/fstab, и включает
-начальный образ ramdisk'а, который будет загружать модули SCSI, IDE и
-файловых систем, необходимые для монтирования корневой файловой
-системы.
+%description -l ru.UTF-8
+п÷я─п╬пЁя─п╟п╪п╪п╟ mkbootdisk я│п╬п╥п╢п╟п╣я┌ я│п╟п╪п╬п╢п╬я│я┌п╟я┌п╬я┤п╫я┐я▌ п╥п╟пЁя─я┐п╥п╬я┤п╫я┐я▌ п╢п╦я│п╨п╣я┌я┐ п╢п╩я▐
+п╥п╟пЁя─я┐п╥п╨п╦ я┌п╣п╨я┐я┴п╣п╧ я│п╦я│я┌п╣п╪я▀. п║п╬п╥п╢п╟п╫п╫п╟я▐ п╢п╦я│п╨п╣я┌п╨п╟ п╠я┐п╢п╣я┌ п╦я│п╨п╟я┌я▄ п╨п╬я─п╫п╣п╡я┐я▌
+я└п╟п╧п╩п╬п╡я┐я▌ я│п╦я│я┌п╣п╪я┐ п╫п╟ я┐я│я┌я─п╬п╧я│я┌п╡п╣, я┐п╨п╟п╥п╟п╫п╫п╬п╪ п╡ /etc/fstab, п╦ п╡п╨п╩я▌я┤п╟п╣я┌
+п╫п╟я┤п╟п╩я▄п╫я▀п╧ п╬п╠я─п╟п╥ ramdisk'п╟, п╨п╬я┌п╬я─я▀п╧ п╠я┐п╢п╣я┌ п╥п╟пЁя─я┐п╤п╟я┌я▄ п╪п╬п╢я┐п╩п╦ SCSI, IDE п╦
+я└п╟п╧п╩п╬п╡я▀я┘ я│п╦я│я┌п╣п╪, п╫п╣п╬п╠я┘п╬п╢п╦п╪я▀п╣ п╢п╩я▐ п╪п╬п╫я┌п╦я─п╬п╡п╟п╫п╦я▐ п╨п╬я─п╫п╣п╡п╬п╧ я└п╟п╧п╩п╬п╡п╬п╧
+я│п╦я│я┌п╣п╪я▀.
 
-%description -l uk
-Програма mkbootdisk створю╓ самодостатню загрузочну дискету для
-загрузки поточно╖ системи. Створена дискета буде шукати корньову
-файлову систему на пристро╖, зазначеному у /etc/fstab, ╕ м╕стить
-початковий образ ramdisk'у, котрий буде загружати модул╕ SCSI, IDE та
-файлових систем, необх╕дн╕ для монтування корньово╖ файлово╖ системи.
+%description -l uk.UTF-8
+п÷я─п╬пЁя─п╟п╪п╟ mkbootdisk я│я┌п╡п╬я─я▌я■ я│п╟п╪п╬п╢п╬я│я┌п╟я┌п╫я▌ п╥п╟пЁя─я┐п╥п╬я┤п╫я┐ п╢п╦я│п╨п╣я┌я┐ п╢п╩я▐
+п╥п╟пЁя─я┐п╥п╨п╦ п©п╬я┌п╬я┤п╫п╬я≈ я│п╦я│я┌п╣п╪п╦. п║я┌п╡п╬я─п╣п╫п╟ п╢п╦я│п╨п╣я┌п╟ п╠я┐п╢п╣ я┬я┐п╨п╟я┌п╦ п╨п╬я─п╫я▄п╬п╡я┐
+я└п╟п╧п╩п╬п╡я┐ я│п╦я│я┌п╣п╪я┐ п╫п╟ п©я─п╦я│я┌я─п╬я≈, п╥п╟п╥п╫п╟я┤п╣п╫п╬п╪я┐ я┐ /etc/fstab, я√ п╪я√я│я┌п╦я┌я▄
+п©п╬я┤п╟я┌п╨п╬п╡п╦п╧ п╬п╠я─п╟п╥ ramdisk'я┐, п╨п╬я┌я─п╦п╧ п╠я┐п╢п╣ п╥п╟пЁя─я┐п╤п╟я┌п╦ п╪п╬п╢я┐п╩я√ SCSI, IDE я┌п╟
+я└п╟п╧п╩п╬п╡п╦я┘ я│п╦я│я┌п╣п╪, п╫п╣п╬п╠я┘я√п╢п╫я√ п╢п╩я▐ п╪п╬п╫я┌я┐п╡п╟п╫п╫я▐ п╨п╬я─п╫я▄п╬п╡п╬я≈ я└п╟п╧п╩п╬п╡п╬я≈ я│п╦я│я┌п╣п╪п╦.
 
 %prep
 %setup -q
