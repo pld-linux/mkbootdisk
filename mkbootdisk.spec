@@ -1,9 +1,9 @@
 Summary:	Creates a standalone boot floppy for the running system
-Summary(es.UTF-8):   Crea un disquete de arranque
-Summary(pl.UTF-8):   Tworzy dyskietkę startową dla działającego systemu
-Summary(pt_BR.UTF-8):   Cria um disco de inicialização
-Summary(ru.UTF-8):   Создает самодостаточную загрузочную дискету для текущей системы
-Summary(uk.UTF-8):   Створює самодостатню загрузочну дискету для поточної системи
+Summary(es.UTF-8):	Crea un disquete de arranque
+Summary(pl.UTF-8):	Tworzy dyskietkę startową dla działającego systemu
+Summary(pt_BR.UTF-8):	Cria um disco de inicialização
+Summary(ru.UTF-8):	Создает самодостаточную загрузочную дискету для текущей системы
+Summary(uk.UTF-8):	Створює самодостатню загрузочну дискету для поточної системи
 Name:		mkbootdisk
 Version:	2.0.3
 Release:	1
